@@ -75,4 +75,4 @@ def _build_auth_url(state=None):
         redirect_uri=app_config['redirect_uri'])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
